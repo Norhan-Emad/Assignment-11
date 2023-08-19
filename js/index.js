@@ -92,7 +92,7 @@ async function getCurrentWeather(){
 
 
 function searchProduct(){
-    let searchWord = searchInput.value.toLowerCase();
+    let searchWord = searchInput.value;
     return searchWord;
 }
 searchInput.addEventListener("input",function(){
