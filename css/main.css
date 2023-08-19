@@ -1,0 +1,20 @@
+#home{
+    background:linear-gradient(to right , #00000065 , #00000065) ,url(../img/Untitled\ design.png)  center/cover no-repeat;
+}
+.navbar-nav .nav-item a:hover,
+.navbar-nav .nav-item a.active{
+    background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right top,rgb(246, 112, 17),rgb(2, 116, 192) ) border-box;
+    border: 3px solid transparent;
+}
+.cards .card{
+    background: rgba(255,255,255,0.2);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+#footer .icons i:hover{
+    color: darkorange;
+    cursor: pointer;
+}

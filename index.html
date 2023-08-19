@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>weather</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-black py-2">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/Pink and Orange Doughnut Sweets Bakery Logo.png" alt="logo" class="w-25">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto fs-5 ">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 text-white rounded-pill" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-white rounded-pill" aria-current="page" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-white rounded-pill" aria-current="page" href="#">live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-white rounded-pill" aria-current="page" href="#">photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-white rounded-pill" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main >
+        <section>
+            <div id="home" class="min-vh-100 w-100 bg-light ">
+                <div class="container">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-7 mt-5 m-auto position-relative">
+                                <input id="search" class="form-control me-2 p-2" type="search" placeholder="find your location...." aria-label="Search">
+                                <button class="btn btn-outline-info position-absolute top-0 start-100 px-3 py-2"
+                                    type="submit">find</button>
+                            </div>
+                            <div class="cards mt-5">
+                                <div class="row ">
+                                    <div class="col-md-4">
+                                        <div class="card mt-5 p-3">
+                                            <h5 class="card-header">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h4 id="currentDay">sunday</h4>
+                                                    </div>
+                                                    <div class="col-8 text-end">
+                                                        <h4 id="dateCurrent">date</h4>
+                                                    </div>
+                                                </div>
+                                            </h5>
+                                            <div class="card-body text-center">
+                                                <img id="iconCurrent" class="w-25">
+                                                <h5 class="card-title"><p class="display-1 fw-bold" ><span id="tempCurrent">20</span><sup>o</sup>C</p></h5>
+                                                <p class="card-text text-capitalize currentCity fs-3 ">london</p>
+                                                <p id="text-current">sunny</p>
+                                                <div class="icons">
+                                                    <span class="px-3"><i class="fa-solid fa-umbrella"></i>20%</span>
+                                                    <span class="px-3"><i class="fa-solid fa-wind"></i>18km/h</span>
+                                                    <span class="px-3"><i class="fa-solid fa-location-crosshairs"></i>East</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card mt-5 p-3">
+                                            <h5 class="card-header">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <h4 id="dayOne">monday</h4>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <h4 id="dateOne">date</h4>
+                                                    </div>
+                                                </div>
+                                            </h5>
+                                            <div class="card-body text-center">
+                                                <img id="iconOne" class="w-25">
+                                                <h5 class="card-title"><p class="display-3 fw-bold" ><span id="temp1">23</span><sup>o</sup>C</p>
+                                                    <p class="fs-2 fw-bold" ><span id="minTemp1">14</span><sup>o</sup>C</p>
+                                                </h5>
+                                                <p class="card-text text-capitalize City1 fs-3">london</p>
+                                                <p id="text1">sunny</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card mt-5 p-3">
+                                            <h5 class="card-header">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <h4 id="dayTwo">tuesday</h4>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <h4 id="dateTwo">date</h4>
+                                                    </div>
+                                                </div>
+                                            </h5>
+                                            <div class="card-body text-center">
+                                                <img id="iconTwo" class="w-25">
+                                                <h5 class="card-title">
+                                                    <p class="display-3 fw-bold" ><span id="temp2">25</span><sup>o</sup>C</p>
+                                                    <p class="fs-2 fw-bold" ><span id="minTemp2">17</span><sup>o</sup>C</p></h5>
+                                                <p class="card-text text-capitalize City2 fs-3">london</p>
+                                                <p id="text2">sunny</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="footer" class="bg-black text-white py-3">
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-5 position-relative mb-4 m-auto">
+                            <input class="form-control me-2" type="search" placeholder="Enter Your Email To Subscribe...." aria-label="Search">
+                            <button class="btn btn-outline-info position-absolute top-0 start-100"
+                                type="submit">Subscribe</button>
+                        </div>
+                        <div class="col-3 icons ms-auto  fs-5">
+                            <i class="fa-brands fa-facebook px-2"></i>
+                            <i class="fa-brands fa-twitter px-2"></i>
+                            <i class="fa-brands fa-github px-2"></i>
+                            <i class="fa-brands fa-google px-2"></i>
+                        </div>
+                        <div class="col-5 m-auto">
+                            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
