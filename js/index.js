@@ -95,10 +95,10 @@ function searchProduct(){
     let searchWord = searchInput.value;
     return searchWord;
 }
-searchInput.addEventListener("input",function(){
+searchInput.addEventListener("input",async function(){
+    await getCurrentWeather();
+    await getBackground();
     searchProduct();
-    getCurrentWeather();
-    getBackground();
     
 })
 
